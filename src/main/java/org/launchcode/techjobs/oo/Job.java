@@ -107,12 +107,39 @@ public class Job {
             coreCompetency.setValue(na);
         }
 
-        return "\nID: _______" + id + "_______\n" +
-                "Name: _______" + name + "_______\n" +
-                "Employer: _______" + employer + "_______\n" +
-                "Location: _______" + location + "_______\n" +
-                "Position Type: _______" + positionType + "_______\n" +
-                "Core Competency: _______" + coreCompetency + "_______\n";
+        return "\n"+"ID: " + id + "\n" +
+                "Name: " + name + "\n" +
+                "Employer: " + employer + "\n" +
+                "Location: " + location + "\n" +
+                "Position Type: " + positionType + "\n" +
+                "Core Competency: " + coreCompetency + "\n";
+
+
+//    @Override
+//    public String toString() {
+//        String na = "Data not available";
+//        if (name == null || name == "") {
+//            name = na;
+//        }
+//        if (employer == null || employer.getValue() == "") {
+//            employer.setValue(na);
+//        }
+//        if (location == null || location.getValue() == "") {
+//            location.setValue(na);
+//        }
+//        if (positionType == null || positionType.getValue() == "") {
+//            positionType.setValue(na);
+//        }
+//        if (coreCompetency == null || coreCompetency.getValue() == "") {
+//            coreCompetency.setValue(na);
+//        }
+//
+//        return "\nID: _______" + id + "_______\n" +
+//                "Name: _______" + name + "_______\n" +
+//                "Employer: _______" + employer + "_______\n" +
+//                "Location: _______" + location + "_______\n" +
+//                "Position Type: _______" + positionType + "_______\n" +
+//                "Core Competency: _______" + coreCompetency + "_______\n";
     }
 }
 
