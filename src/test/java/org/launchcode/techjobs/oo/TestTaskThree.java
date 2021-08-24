@@ -29,7 +29,7 @@ public class TestTaskThree extends AbstractTest {
     }
 
     @Test
-    public void testNoArgConstructorInitializesIdField () throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
+    public void testNoArgConstructorInitializesIdField() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         Class jobClass = getClassByName("Job");
         Constructor<Job> noArgConstructor = jobClass.getConstructor();
         Job job = noArgConstructor.newInstance();
@@ -39,7 +39,7 @@ public class TestTaskThree extends AbstractTest {
     }
 
     @Test
-    public void testNoArgConstructorSetsUniqueIds () throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
+    public void testNoArgConstructorSetsUniqueIds() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         Class jobClass = getClassByName("Job");
         Constructor<Job> noArgConstructor = jobClass.getConstructor();
         Job aJob = noArgConstructor.newInstance();
@@ -75,7 +75,7 @@ public class TestTaskThree extends AbstractTest {
                 PositionType.class,
                 CoreCompetency.class);
 
-        Job aJob = createJob ("Name", "Employer", "Location", "Position Type", "Core Competency");
+        Job aJob = createJob("Name", "Employer", "Location", "Position Type", "Core Competency");
 
         assertNotNull(getJobFieldString(aJob, "name", false));
         assertNotNull(getJobFieldString(aJob, "employer", false));
@@ -280,3 +280,11 @@ public class TestTaskThree extends AbstractTest {
     }
 
 }
+
+
+//running on java 16
+
+
+
+
+
